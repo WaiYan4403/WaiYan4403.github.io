@@ -31,6 +31,25 @@
             background-size: 100%;
             background-repeat: no-repeat;
         }
+        /* #contact{
+            background-image: url("images/contactbg.png");
+            background-size: 100%;
+            background-repeat: no-repeat;
+        } */
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 columns with equal width */
+            gap: 10px; /* Adjust the gap between images as needed */
+        }
+
+        .image-grid img {
+            width: 100%; /* Make the images fill their grid cell */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 20px;
+        }
+        .text-center {
+            text-align: center;
+        }
     </style>
 </head>
 <body>
@@ -38,7 +57,7 @@
     
     <div class="nav d-flex justify-content-center align-items-center" style="height:50px;">
         <a href="#home" class="mx-2 active">Home</a>
-        <a href="#projects" class="mx-2">Projects</a>
+        <a href="#projects" class="mx-2">Works</a>
         <a href="#games" class="mx-2">Games</a>
         <a href="#about" class="mx-2">About</a>
         <a href="#contact" class="mx-2">Contact</a>
@@ -51,9 +70,8 @@
             <h3 class="text-white">Unity Game Developer</h3>
             <div class="introduction mx-auto" style="width:600px">
                 <img src="images/profilefb.png">
-                <p>I'm a game designer, programmer, artist and creative collaborator with over 6 years of experience making games.</p>
-                <p>Creating worlds and experiences that can relax the players is my passion.</p>
-                <p>Making a cozy top-down pixel art RPG is my dream.</p>
+                <p>I'm Wai Yan Phyoe, an aspiring game developer with a passion for crafting immersive, interactive experiences that transport players to new worlds and adventures.</p>
+                <p>This website is your portal to my creative universe, where you can explore my projects, dive into my game development journey, and get a taste of the magic that happens behind the scenes.</p>
             </div>
         </div>
     </section>
@@ -61,30 +79,39 @@
     <section id="projects">
         <div class="projects_section">
             <br>
-            <h1 class="text-white">projects</h1>
-            <p>Projects I've done with other developers or alone.</p>
+            <h1 class="text-white">works</h1>
+            <p class="text-center">Works I've doned for clients.</p>
+            <div class="image-grid">
+                <a href="https://play.google.com/store/apps/details?id=com.APIndieGames.IronWarfarePixelAssault&pcampaignid=web_share"><img src="images/unnamed1.png" alt="Image 1"></a>
+                <a href="https://m.apkpure.com/%E1%80%85%E1%80%80%E1%80%AC%E1%80%B8%E1%80%91%E1%80%AC-riddles-myanmar/com.SaKaHtar.Riddles"><img src="images/unnamed2.png" alt="Image 2"></a>
+                <a href="https://play.google.com/store/apps/details?id=com.MWC.Lexis&pcampaignid=web_share"><img src="images/unnamed.png" alt="Image 3"></a>
+            </div>
         </div>
     </section>
     <section id="games">
         <div class="games_section">
             <br>
             <h1 class="text-white">games</h1>
-            <p>Games I've release with other developers or alone.</p>
+            <p class="text-center">Games I've released</p>
+            <div class="image-grid">
+                <a href="https://yahallogames.itch.io/escaperooms"><img src="images/483Nnl.png" alt="Image 1"></a>
+                <a href="https://yahallogames.itch.io/duo-catchers"><img src="images/tAcgCA.png" alt="Image 2"></a>
+                <a href="https://yahallogames.itch.io/robota"><img src="images/_6z5lH.png" alt="Image 3"></a>
+                <a href="https://yahallogames.itch.io/tubics"><img src="images/ynGI+6.png" alt="Image 4"></a>
+            </div>
         </div>
     </section>
     <section id="about">
         <div class="about_section">
             <br>
-            <h1 class="text-white">about</h1>
+            <h1 class="text-white">About Me</h1>
             <div class="about mx-auto" style="width:900px">
-                <p>I started learning about game development when I was 19.</p>
-                <p>I made a lot of projects using UE4, but I didn't enjoyed working with blueprints and UE4 is kind of complicated to me as a beginner.</p>
-                <p>I didn't have enough time for game development as a student.</p>
-                <p>So, I only made games in holidays.</p>
-                <p>In 2020, Coronavirus breakout and my school was closed for a long time.</p>
-                <p>In December,I started using Unity and I enjoyed using it.</p>
-                <p>In 2021, I participated in a escape room game contest and I won the prize.</p>
-                <p>My confident with game development starting to rise and I started working as a freelancer, part-time and junior game developer.</p>
+                <p>I'm a Unity game developer with over 2 years of experiences.</p>
+                <!-- <p>I made a lot of projects and release some complete games with other and alone.</p> -->
+                <p><a href="https://yahallogames.itch.io/escaperooms">My game</a> also won an award at <a href="https://www.facebook.com/birmanie.if/posts/pfbid02F6Zt6K7ttvKsryysimVLVsGoRvdzm8rrsweuU71VCkD6VBb4PETWGejBpFMJmDBjl">Escape Room Game Development Contest.</a></p>
+                <p>I'm also a dedicated student on a mission to turn my passion for gaming into a full-fledged career. </p>
+                <p>Currently pursuing a Bachelor's degree in Computer Science, I'm set to graduate in 2024. </p>
+                <p> However, I firmly believe that my journey as a game developer has already ventured beyond the boundaries of the classroom.</p>
             </div>
         </div>
     </section>
@@ -93,9 +120,23 @@
             <br>
             <h1 class="text-white">Contact Me</h1>
             <br>
-            <a href="mailto:waiyan4403@gmail.com">waiyan4403@gmail.com</a>
-            <p>+95 9790451124</p>
-            <p>+95 9258778559</p>
+            <div class="row">
+                <div class="col-md-2">
+                    <a href="https://www.facebook.com/waiyan4403/"><img src="svg/facebook.svg" width="50px" height="50px"></a><br>
+                    <a href="https://twitter.com/yahallo_games"><img src="svg/twitter.svg" width="50px" height="50px"></a><br>
+                    <!-- <a href="https://www.instagram.com/yahallogames/"><img src="svg/instagram.svg" width="50px" height="50px"></a> -->
+                </div>
+                <div class="col-md-2">
+                    <a href="https://www.linkedin.com/in/wai-yan-phyoe-b97a1b250/"><img src="svg/linkedin.svg" width="50px" height="50px"></a><br>
+                    <a href="https://yahallogames.itch.io/"><img src="svg/itch-dot-io.svg" width="50px" height="50px"></a><br>
+                    <!-- <a href=""><img src="svg/discord.svg" width="50px" height="50px"></a> -->
+                </div>
+                <div class="col-md-8">
+                    <a href="mailto:waiyan4403@gmail.com">waiyan4403@gmail.com</a>
+                    <p>+95 9790451124</p>
+                    <p>+95 9258778559</p>
+                </div>
+            </div>
         </div>
     </section>
 </body>
