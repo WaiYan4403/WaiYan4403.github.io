@@ -103,28 +103,13 @@ h3{
     margin-top: 2rem; /* Optional: space above the section */
 }
 
-.profile-container {
-    position: relative; /* Position the container relative */
-    border-radius: 50%; /* Make the container circular */
-    overflow: hidden; /* Hide overflow for the inner images */
-    margin-bottom: 1rem; /* Space between the image and text */
-}
-
-#profileImage {
-    position: relative; /* Position the container relative */
-    border-radius: 50%; /* Make the container circular */
-    top: 50%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    
-    width: 200px; /* Set a fixed width for the container */
-    height: 200px; /* Set a fixed height for the container */
-    transform: translate(-50%, -50%); /* Center the image */
-    width: 90%; /* Adjust size as necessary */
-    height: auto; /* Automatically size to maintain aspect ratio */
-    max-height: 90%; /* Limit max height to prevent overflow */
-    border-radius: 50%; /* Make the image circular */
-    z-index: 2; /* Ensure profile image is above the background */
-    transition: opacity 0.25s; /* Add a transition for fade effect */
+.profileImage{
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
 }
 
 
