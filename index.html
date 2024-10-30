@@ -25,22 +25,20 @@
         }
         #home{
             background-image: url("images/homebg.png");
-            background-size: 100%;
-            height: auto;
-            background-repeat: no-repeat;
         }
         #games{
             background-image: url("images/gamebg.png");
-            background-size: 100%;
-            height: auto;
-            background-repeat: no-repeat;
         }
         #projects{
             background-image: url("images/webbg.png");
-            background-size: 100%;
-            height: auto;
+        }
+        #home, #games, #projects {
+            background-size: contain;
+            background-position: center;
+            height: 100vh; /* Adjust to fit the screen height */
             background-repeat: no-repeat;
         }
+
         /* #contact{
             background-image: url("images/contactbg.png");
             background-size: 100%;
@@ -49,7 +47,7 @@
         .image-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr); /* 3 columns with equal width */
-            gap: 10px; /* Adjust the gap between images as needed */
+            gap: 50px; /* Adjust the gap between images as needed */
         }
 
         .image-grid img {
@@ -64,7 +62,7 @@
 </head>
 <body>
     <script src="js/bootstrap.bundle.min.js"></script>
-    <div class="nav d-flex justify-content-center align-items-center pt-2" style="height:50px;">
+    <div class="nav d-flex justify-content-center align-items-center pt-2" style="height:80px;">
         <a href="#home" class="nav-link mx-3 active" id="nav-home">Home
             <div class="kanote" style="display: flex; justify-content: center; align-items: center;">   
                 <img src="images/Kanote/Nav.png" style="margin-top: -35px; height: 60px;"/>
