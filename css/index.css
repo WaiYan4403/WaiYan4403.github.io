@@ -132,6 +132,7 @@ h3{
     margin-top: 2rem;
     text-align: left;
 }
+
 .image-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Default to 3 columns */
@@ -144,6 +145,10 @@ h3{
     height: auto;
     border-radius: 20px;
 }
+section {
+    scroll-margin-top: 100px; /* Adjust the value to your desired offset */
+}
+
 
 .projects_section h1{
     text-align: center;
