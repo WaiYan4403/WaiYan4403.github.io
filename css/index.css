@@ -145,22 +145,6 @@ h3{
     border-radius: 20px;
 }
 
-/* For medium screens (tablets) */
-@media (max-width: 1024px) {
-    .image-grid {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
-        gap: 30px;
-    }
-}
-
-/* For small screens (mobile) */
-@media (max-width: 600px) {
-    .image-grid {
-        grid-template-columns: 1fr; /* Single column for mobile screens */
-        gap: 20px;
-    }
-}
-
 .projects_section h1{
     text-align: center;
     font-size: 4rem;
@@ -215,64 +199,4 @@ h3{
     font-size: 2rem;
     margin-top: 2rem;
     text-align: center;
-}
-/* General styling adjustments */
-body, html {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Mobile devices */
-@media (max-width: 575px) {
-    .nav-link {
-        font-size: 12px;
-    }
-    .image-grid a img {
-        width: 100%; /* Ensure images take full width on small screens */
-        height: auto;
-    }
-    .introduction, .about, .about_section, .projects_section {
-        width: 100%; /* Full width on mobile */
-        padding: 10px;
-    }
-}
-
-/* Tablets and small desktops */
-@media (min-width: 576px) and (max-width: 768px) {
-    .nav-link {
-        font-size: 14px;
-    }
-    .introduction, .about, .projects_section {
-        width: 80%; /* Reduce width for readability on tablet */
-    }
-    .image-grid a img {
-        width: 100%; /* Full width on smaller screens */
-    }
-}
-
-/* Larger screens */
-@media (min-width: 992px) {
-    .nav-link {
-        font-size: 16px;
-    }
-    .introduction, .about, .projects_section {
-        width: 60%; /* Restrict width for better readability on larger screens */
-    }
-    .image-grid {
-        display: flex;
-        gap: 20px;
-    }
-    .image-grid a img {
-        width: 200px;
-        height: auto; /* Maintain aspect ratio */
-    }
-}
-
-/* Customize the navigation links */
-.nav-link {
-    color: white;
-}
-.nav-link.active {
-    color: #ab4bff;
 }
