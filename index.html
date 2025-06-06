@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,224 +9,282 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css" type="text/css">
     <script>
-        $(document).ready(function(){
-            $("a").click(function(){
+        $(document).ready(function () {
+            $("a").click(function () {
                 $(this).addClass("active").siblings().removeClass("active");
             });
         })
     </script>
-    <style>
-        section {
-            padding-top: 5px; /* Space above each section */
-            height: auto;
-        }
-
-        html {
-            scroll-padding-top: 60px; /* Adjust scroll padding */
-        }
-        #home{
-            background-image: url("images/homebg.png");
-        }
-        #games{
-            background-image: url("images/gamebg.png");
-        }
-        #projects{
-            background-image: url("images/webbg.png");
-        }
-        #home, #games, #projects,#contact {
-            background-size: contain;
-            background-position: center;
-            height: auto; /* Adjust to fit the screen height */
-            background-repeat: no-repeat;
-        }
-
-        /* #contact{
-            background-image: url("images/contactbg.png");
-            background-size: 100%;
-            background-repeat: no-repeat;
-        } */
-        .text-center {
-            text-align: center;
-        }
-    </style>
 </head>
+
 <body>
     <script src="js/bootstrap.bundle.min.js"></script>
-    <div class="nav d-flex justify-content-center align-items-center pt-2" style="height:80px;">
+    <div class="nav d-flex justify-content-center align-items-center pt-2 nav-container">
         <a href="#home" class="nav-link mx-3 active" id="nav-home">Home
-            <div class="kanote" style="display: flex; justify-content: center; align-items: center;">   
-                <img src="images/Kanote/Nav.png" style="margin-top: -35px; height: 60px;"/>
-            </div> 
+            <div class="kanote">
+                <img src="images/Kanote/Nav.png" class="kanote-img" />
+            </div>
         </a>
         <div class="dropdown mx-3">
             <a class="nav-link" id="nav-projects" data-bs-toggle="dropdown" aria-expanded="false">
                 Projects
-                <div class="kanote" style="display: none; justify-content: center; align-items: center;">   
-                    <img src="images/Kanote/Nav.png" style="margin-top: -35px; height: 60px;"/>
-                </div> 
+                <div class="kanote">
+                    <img src="images/Kanote/Nav.png" class="kanote-img" />
+                </div>
             </a>
             <ul class="dropdown-menu" aria-labelledby="nav-projects">
                 <li><a class="dropdown-item" href="#projects">Client</a></li>
                 <li><a class="dropdown-item" href="#games">Personal</a></li>
+                <li><a class="dropdown-item" href="#game-jams">Game Jams</a></li>
             </ul>
         </div>
         <a href="#about" class="nav-link mx-3" id="nav-about">About
-            <div class="kanote" style="display: none; justify-content: center; align-items: center;">   
-                <img src="images/Kanote/Nav.png" style="margin-top: -35px; height: 60px;"/>
-            </div> 
+            <div class="kanote">
+                <img src="images/Kanote/Nav.png" class="kanote-img" />
+            </div>
         </a>
         <a href="#contact" class="nav-link mx-3" id="nav-contact">Contact
-            <div class="kanote" style="display: none; justify-content: center; align-items: center;">   
-                <img src="images/Kanote/Nav.png" style="margin-top: -35px; height: 60px;"/>
-            </div> 
+            <div class="kanote">
+                <img src="images/Kanote/Nav.png" class="kanote-img" />
+            </div>
         </a>
     </div>
-
-    <br><br><br><br>
+<br><br><br>
     <section id="home">
         <div class="home_section">
             <h1 class="text-white">
-                <img src="images/Kanote/Name1.png" style="margin-top: -30px; margin-right: -30px; height: 60px; transform: scaleX(-1);"/>
+                <img src="images/Kanote/Name1.png"
+                    style="margin-top: -30px; margin-right: -30px; height: 60px; transform: scaleX(-1);" />
                 wai yan phyoe
-                <img src="images/Kanote/Name1.png" style="margin-top: -30px;margin-left: -30px; height: 60px;"/></h1>           
-            
+                <img src="images/Kanote/Name1.png" style="margin-top: -30px;margin-left: -30px; height: 60px;" />
+            </h1>
+
             <h3 class="text-white">
-                <img src="images/Kanote/Name2.png" style="margin-top: -30px; margin-right: -30px; height: 60px; transform: scaleX(-1);"/>
+                <img src="images/Kanote/Name2.png"
+                    style="margin-top: -30px; margin-right: -30px; height: 60px; transform: scaleX(-1);" />
                 Game Developer, Artist
-                <img src="images/Kanote/Name2.png" style="margin-top: -30px;margin-left: -30px; height: 60px;"/></h1></h3> 
-                <div class="introduction mx-auto" style="width:900px">
-                    <img id="profileImage" src="images/my_pic.jpg" alt="Profile Picture" />
-                    
-                    <p style="text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I'm <span style="color: #ab4bff;">Wai Yan Phyoe</span>, an aspiring game developer with a passion for crafting immersive, interactive experiences that transport players to new worlds and adventures.
-                    <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Welcome to my creative universe! Here, you can explore my projects, follow my journey in game development, and get a behind-the-scenes look at the magic that fuels my work.</p>
-                </div>
-                
+                <img src="images/Kanote/Name2.png" style="margin-top: -30px;margin-left: -30px; height: 60px;" /></h1>
+            </h3>
+            <div class="introduction mx-auto">
+                <img id="profileImage" src="images/my_pic.jpg" alt="Profile Picture" />
+
+                <p>I'm <span class="highlight">Wai Yan Phyoe</span>, an aspiring game developer with a passion for
+                    crafting immersive, interactive experiences that transport players to new worlds and adventures.
+                    <br>Welcome to my creative universe! Here, you can explore my
+                    projects, follow my journey in game development, and get a behind-the-scenes look at the magic that
+                    fuels my work.
+                </p>
+            </div>
+
         </div>
     </section>
-    <br><br><br><br>
+    <br><br><br>
     <section id="projects">
         <div class="projects_section">
             <h1 class="text-white">Client Projects</h1>
+            <div class="kanote">
+                <img src="images/Kanote/Nav.png" class="kanote-img" width="300px" height="10px"/>
+            </div>
             <p class="text-center">Projects I've done for clients.</p>
             <div class="image-grid">
-                <a href="https://play.google.com/store/apps/details?id=com.APIndieGames.IronWarfarePixelAssault&pcampaignid=web_share"><img src="images/unnamed1.png" alt="Image 1"></a>
-                <a href="https://m.apkpure.com/%E1%80%85%E1%80%80%E1%80%AC%E1%80%B8%E1%80%91%E1%80%AC-riddles-myanmar/com.SaKaHtar.Riddles"><img src="images/unnamed2.png" alt="Image 2"></a>
-                <a href="https://play.google.com/store/apps/details?id=com.MWC.Lexis&pcampaignid=web_share"><img src="images/unnamed.png" alt="Image 3"></a>
+                <div class="image-grid-item">
+                    <a href="https://play.google.com/store/apps/details?id=com.APIndieGames.IronWarfarePixelAssault&pcampaignid=web_share">
+                        <img src="images/Iron-Warefare.png" alt="Iron Warfare">
+                        <h3>Iron Warfare</h3>
+                    </a>
+                    <p>A pixel art action game featuring intense combat and strategic gameplay.</p>
+                </div>
+                <div class="image-grid-item">
+                    <a href="https://m.apkpure.com/%E1%80%85%E1%80%80%E1%80%AC%E1%80%B8%E1%80%91%E1%80%AC-riddles-myanmar/com.SaKaHtar.Riddles">
+                        <img src="images/Sakahtar.png" alt="Sakahtar Riddles">
+                        <h3>Sakahtar</h3>
+                    </a>
+                    <p>An engaging puzzle game with traditional Myanmar riddles.</p>
+                </div>
+                <div class="image-grid-item">
+                    <a href="https://play.google.com/store/apps/details?id=com.MWC.Lexis&pcampaignid=web_share">
+                        <img src="images/Lexis.png" alt="Lexis">
+                        <h3>Lexis</h3>
+                    </a>
+                    <p>An educational math game designed to help children develop in mathematics.</p>
+                </div>
             </div>
         </div>
     </section>
-    <br><br><br><br>
     <section id="games">
         <div class="games_section">
             <h1 class="text-white">Personal Projects</h1>
+            <div class="kanote">
+                <img src="images/Kanote/Nav.png" class="kanote-img" width="400px" height="10px"/>
+            </div>
             <p class="text-center">Games I've developed and released.</p>
             <div class="image-grid">
-                <a href="https://yahallogames.itch.io/escaperooms"><img src="images/483Nnl.png" alt="Image 1"></a>
-                <a href="https://yahallogames.itch.io/duo-catchers"><img src="images/tAcgCA.png" alt="Image 2"></a>
-                <a href="https://yahallogames.itch.io/robota"><img src="images/6z5lH.png" alt="Image 3"></a>
-                <a href="https://yahallogames.itch.io/tubics"><img src="images/ynGI+6.png" alt="Image 4"></a>
+                <div class="image-grid-item">
+                    <a href="https://yahallogames.itch.io/desktop-capybaras">
+                        <img src="images/Desktop-Capybara.png" alt="Desktop Capybaras">
+                        <h3>Desktop Capybaras</h3>
+                    </a>
+                    <p>Adorable virtual pets that live on your desktop.</p>
+                </div>
+                <div class="image-grid-item">
+                    <a href="https://yahallogames.itch.io/slime-evolved">
+                        <img src="images/Slime-Evolved.png" alt="Slime Evolved">
+                        <h3>Slime Evolved</h3>
+                    </a>
+                    <p>An evolution-based game where you grow and adapt your slime.</p>
+                </div>
+                <div class="image-grid-item">
+                    <a href="https://yahallogames.itch.io/tubics">
+                        <img src="images/Tubics.png" alt="Tubics">
+                        <h3>Tubics</h3>
+                    </a>
+                    <p>A unique puzzle game with tube-based mechanics.</p>
+                </div>
+                <div class="image-grid-item">
+                    <a href="https://yahallogames.itch.io/escaperooms">
+                        <img src="images/Escape-Rooms.png" alt="Escape Rooms">
+                        <h3>Escape Rooms</h3>
+                    </a>
+                    <p>An award-winning puzzle game with challenging escape room scenarios.</p>
+                </div>
             </div>
         </div>
     </section>
-    <br><br><br><br>
+    <section id="game-jams">
+        <div class="game_jams_section">
+            <h1 class="text-white">Game Jams</h1>
+            <div class="kanote">
+                <img src="images/Kanote/Nav.png" class="kanote-img" width="200px" height="10px"/>
+            </div>
+            <p class="text-center">Game jams I've participated in.</p>
+            <div class="image-grid">
+                <div class="image-grid-item">
+                    <a href="https://yahallogames.itch.io/robota">
+                        <img src="images/Robota.png" alt="Robota">
+                        <h3>Robota</h3>
+                    </a>
+                    <p>A robot-themed game created during a game jam.</p>
+                </div>
+                <div class="image-grid-item">
+                    <a href="https://yahallogames.itch.io/duo-catchers">
+                        <img src="images/Duo-Catchers.png" alt="Duo Catchers">
+                        <h3>Duo Catchers</h3>
+                    </a>
+                    <p>Control two characters to catch fishs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
     <section id="about">
         <div class="about_section">
             <h1 class="text-white">About Me</h1>
-            <div class="about mx-auto" style="width:900px">
-                <p style="text-align: justify;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I’m a Unity game developer with over five years of hands-on experience in building immersive, interactive games. My journey in game development has been a blend of learning, creativity, and a commitment to turning my passion into a full-fledged career.
-                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Over the years, I’ve developed numerous projects, releasing several complete games both individually and in collaboration with other talented developers. My participation in various game jams and competitions has also helped me grow as a developer and as a creative professional.
-                <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;One of my proudest achievements was winning an award in the <a href="https://www.facebook.com/birmanie.if/posts/pfbid02F6Zt6K7ttvKsryysimVLVsGoRvdzm8rrsweuU71VCkD6VBb4PETWGejBpFMJmDBjl">Escape Room Game Development Contest</a> with my game, 
-                    <a href="https://yahallogames.itch.io/escaperooms">Escape Rooms</a>. This project, among others, has been a milestone in my journey as a game developer, showcasing my dedication to crafting engaging and innovative game experiences. </p>
+            <div class="kanote">
+                <img src="images/Kanote/Nav.png" class="kanote-img" width="170px" height="10px"/>
+            </div>
+            <div class="about mx-auto">
+                <p>I'm a Unity game developer with over
+                    five years of hands-on experience in building immersive, interactive games. My journey in game
+                    development has been a blend of learning, creativity, and a commitment to turning my passion into a
+                    full-fledged career.
+                    <br>Over the years, I've developed numerous projects, releasing
+                    several complete games both individually and in collaboration with other talented developers. My
+                    participation in various game jams and competitions has also helped me grow as a developer and as a
+                    creative professional.
+                    <br>One of my proudest achievements was winning an award in the
+                    <a href="https://www.facebook.com/birmanie.if/posts/pfbid02F6Zt6K7ttvKsryysimVLVsGoRvdzm8rrsweuU71VCkD6VBb4PETWGejBpFMJmDBjl">Escape
+                    Room Game Development Contest</a> with my game,
+                    <a href="https://yahallogames.itch.io/escaperooms">Escape Rooms</a>. This project, among others, has
+                    been a milestone in my journey as a game developer, showcasing my dedication to crafting engaging
+                    and innovative game experiences.
+                </p>
             </div>
         </div>
     </section>
-    <br><br><br><br>
     <section id="contact" class="pb-5">
         <div class="contact_section">
-            <h1 class="text-white">Contact</h1>
-            <div class="contact mx-auto" style="width:900px">
-                <!-- <div class="col-md-2">
-                    <a href="https://www.facebook.com/waiyan4403/"><img src="svg/facebook.svg" width="50px" height="50px"></a><br>
-                    <a href="https://twitter.com/yahallo_games"><img src="svg/twitter.svg" width="50px" height="50px"></a><br>
-                    <a href="https://www.instagram.com/yahallogames/"><img src="svg/instagram.svg" width="50px" height="50px"></a>
-                </div>
-                <div class="col-md-2">
-                    <a href="https://www.linkedin.com/in/wai-yan-phyoe-b97a1b250/"><img src="svg/linkedin.svg" width="50px" height="50px"></a><br>
-                    <a href="https://yahallogames.itch.io/"><img src="svg/itch-dot-io.svg" width="50px" height="50px"></a><br>
-                    <a href=""><img src="svg/discord.svg" width="50px" height="50px"></a>
-                </div>-->
+            <h1 class="text-white">Contact Me</h1>
+            <div class="kanote">
+                <img src="images/Kanote/Nav.png" class="kanote-img" width="210px" height="10px"/>
+            </div>
+            <div class="contact mx-auto">
                 <p>
                     If you're interested in commissioning me or
                     in collaborating with me,
-                    <br>I'd love to hear from you! ❤ 
+                    <br>I'd love to hear from you! ❤
                     <br><br><a href="mailto:waiyan4403@gmail.com">waiyan4403@gmail.com</a>
                     <br>+95 9258778559, +95 9697301072
                 </p>
                 <div class="d-flex flex-column flex-sm-row justify-content-center my-4">
                     <ul class="list-unstyled d-flex justify-content-center">
-                        <li class="mx-4"><a href="https://www.facebook.com/waiyan4403/"><img src="svg/facebook.svg" width="50px" height="50px"></a></li>
-                        <li class="mx-4"><a href="https://yahallogames.itch.io/"><img src="svg/itch-dot-io.svg" width="50px" height="50px"></a></li>
-                        <li class="mx-4"><a href="https://www.upwork.com/freelancers/~01da6d71a1bef51b9c?mp_source=share/"><img src="svg/upwork.svg" width="50px" height="50px"></a></li>
-                        <li class="mx-4"><a href="https://www.linkedin.com/in/wai-yan-phyoe-b97a1b250/"><img src="svg/linkedin.svg" width="50px" height="50px"></a></li>
+                        <li class="mx-4"><a href="https://www.facebook.com/waiyan4403/"><img src="svg/facebook.svg"
+                                    width="50px" height="50px"></a></li>
+                        <li class="mx-4"><a href="https://yahallogames.itch.io/"><img src="svg/itch-dot-io.svg"
+                                    width="50px" height="50px"></a></li>
+                        <li class="mx-4"><a
+                                href="https://www.upwork.com/freelancers/~01da6d71a1bef51b9c?mp_source=share/"><img
+                                    src="svg/upwork.svg" width="50px" height="50px"></a></li>
+                        <li class="mx-4"><a href="https://www.linkedin.com/in/wai-yan-phyoe-b97a1b250/"><img
+                                    src="svg/linkedin.svg" width="50px" height="50px"></a></li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 </body>
+
 </html>
 <script>
-const profileImage = document.getElementById("profileImage");
-const images = [
-    "images/my_pic.jpg",
-    "images/my_pic2.jpg",
-    // Add as many images as needed
-];
-let imageIndex = 0;
-let interval;
+    const profileImage = document.getElementById("profileImage");
+    const images = [
+        "images/my_pic.jpg",
+        "images/my_pic2.jpg",
+        // Add as many images as needed
+    ];
+    let imageIndex = 0;
+    let interval;
 
-function startImageRotation() {
-    interval = setInterval(() => {
-        // Fade out
-        profileImage.classList.add("hidden");
+    function startImageRotation() {
+        interval = setInterval(() => {
+            // Fade out
+            profileImage.classList.add("hidden");
 
-        // Wait for the fade-out transition to complete
-        setTimeout(() => {
-            // Update the image
-            imageIndex = (imageIndex + 1) % images.length;
-            profileImage.src = images[imageIndex];
+            // Wait for the fade-out transition to complete
+            setTimeout(() => {
+                // Update the image
+                imageIndex = (imageIndex + 1) % images.length;
+                profileImage.src = images[imageIndex];
 
-            // Fade in
-            profileImage.classList.remove("hidden");
-        }, 100); // Match this timeout to the CSS transition duration
-    }, 1500); // Adjust time for image change frequency
-}
+                // Fade in
+                profileImage.classList.remove("hidden");
+            }, 100); // Match this timeout to the CSS transition duration
+        }, 1500); // Adjust time for image change frequency
+    }
 
-function stopImageRotation() {
-    clearInterval(interval);
-    // Do not reset to the original image; keep the current one as the default.
-    profileImage.classList.remove("hidden"); // Ensure it’s visible
-}
+    function stopImageRotation() {
+        clearInterval(interval);
+        // Do not reset to the original image; keep the current one as the default.
+        profileImage.classList.remove("hidden"); // Ensure it's visible
+    }
 
-profileImage.addEventListener("mouseover", startImageRotation);
-profileImage.addEventListener("mouseout", stopImageRotation);
+    profileImage.addEventListener("mouseover", startImageRotation);
+    profileImage.addEventListener("mouseout", stopImageRotation);
 
-document.addEventListener("DOMContentLoaded", function() {
-    const navLinks = document.querySelectorAll(".nav-link");
+    document.addEventListener("DOMContentLoaded", function () {
+        const navLinks = document.querySelectorAll(".nav-link");
 
-    navLinks.forEach(link => {
-        link.addEventListener("click", function() {
-            // Remove active class and hide kanote for all links
-            navLinks.forEach(nav => {
-                nav.classList.remove("active");
-                nav.querySelector(".kanote").style.display = "none";
+        navLinks.forEach(link => {
+            link.addEventListener("click", function () {
+                // Remove active class and hide kanote for all links
+                navLinks.forEach(nav => {
+                    nav.classList.remove("active");
+                    nav.querySelector(".kanote").style.display = "none";
+                });
+
+                // Add active class to the selected link and show kanote
+                this.classList.add("active");
+                this.querySelector(".kanote").style.display = "flex";
             });
-
-            // Add active class to the selected link and show kanote
-            this.classList.add("active");
-            this.querySelector(".kanote").style.display = "flex";
         });
     });
-});
 
 </script>
