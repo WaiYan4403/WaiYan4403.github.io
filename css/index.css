@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@1,200&family=Nunito:wght@200&display=swap" rel="stylesheet');
+
+:root{
+    --white:rgb(240, 240, 240);
+    --silver:rgb(172, 172, 172);
+    --gray:rgb(119, 119, 119);
+    --grey:rgb(79, 79, 79);
+    --darkgrey:rgb(16,16,16);
+    --dark:rgb(0,0,0);
+}
+
+*{
+    /*font-family: 'Nunito' ,sans-serif;*/
+    font-family: 'Kawaii', sans-serif !important;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    list-style: none;
+    text-decoration: none;
+    text-transform: none;
+    scroll-behavior: smooth;
+}
+@font-face {
+    font-family: 'Kawaii';
+    src: url('../fonts/Kawaii_desktop-Regular.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+section{
+    height: 130vh;
+    width: 100%;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    font-size: 50px;
+}
+
+body{
+    font-family: 'Kawaii', sans-serif !important;
+    background: var(--dark);
+}
+
+.nav{
+    background: var(--dark);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.nav a{
+    color: var(--silver);
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+.nav a:hover{
+    color: var(--gray);
+}
+.nav a.active{
+    color: var(--white);
+}
+.nav-link {
+    color: var(--silver); /* Default color for non-selected */
+}
+.nav-link:hover {
+    color: var(--gray); /* Default color for non-selected */
+}
+.nav-link.active {
+    color: var(--white); /* Color for selected */
+}
+
+/* Change the default color and background color of dropdown items */
+.dropdown-item {
+    color: #ff0000; /* Text color */
+    background-color: #ffff; /* Background color */
+}
+
+/* Change color on hover */
+.dropdown-item:hover {
+    color: #fffb00; /* Text color on hover */
+    background-color: #ffff; /* Background color on hover */
+}
+h1{
+    text-align: center;
+    font-size: 5rem;
+    text-transform: uppercase;
+}
+h3{
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+.introduction {
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center items horizontally */
+    margin-top: 2rem; /* Optional: space above the section */
+}
+
+.profileImage{
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+}
+
+
+.hidden {
+    opacity: 0; /* Class to hide image */
+}
+
+.introduction{
+    align-items: center;
+    margin-top: 2rem;
+}
+.introduction img{
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+}
+.introduction p{
+    color: var(--silver);
+    font-size: 2rem;
+    margin-top: 2rem;
+    text-align: left;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Default to 3 columns */
+    gap: 50px;
+}
+
+/* Image styling */
+.image-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
+section {
+    scroll-margin-top: 50px; /* Adjust the value to your desired offset */
+}
+
+
+.projects_section h1{
+    text-align: center;
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+.projects_section p{
+    color: var(--silver);
+    font-size: 2rem;
+    margin-top: 2rem;
+    text-align: left;
+}
+
+.games_section h1{
+    text-align: center;
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+.games_section p{
+    color: var(--silver);
+    font-size: 2rem;
+    margin-top: 2rem;
+    text-align: left;
+}
+.about_section h1{
+    text-align: center;
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+.about_section .about{
+    align-items: center;
+}
+.about_section .about p{
+    color: var(--silver);
+    font-size: 2rem;
+    margin-top: 2rem;
+    text-align: left;
+}
+
+.contact_section h1{
+    text-align: center;
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+.contact_section a{
+    color: var(--silver);
+    font-size: 2rem;
+    margin-top: 2rem;
+    /* text-align: center; */
+}
+.contact_section p{
+    color: var(--silver);
+    font-size: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+}
