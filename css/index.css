@@ -47,7 +47,7 @@ body{
 
 /* Section Styles */
 section {
-    scroll-margin-top: 60px;
+    scroll-margin-top: 10px;
     height: auto;
     display: flex;
     align-items: flex-start;
@@ -227,7 +227,7 @@ h3{
     background-size: 40%;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 50px 0;
+    padding: 20px 0;
 }
 
 .image-grid-item {
