@@ -329,6 +329,24 @@ h3{
     justify-content: center;
 }
 
+.game_assets_section h1{
+  text-align: center;
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+
+.game_assets_section p{
+  color: var(--silver);
+  font-size: 2rem;
+  text-align: center !important;
+}
+
+#game-assets {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .about_section h1{
     text-align: center;
     font-size: 4rem;
