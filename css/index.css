@@ -81,8 +81,22 @@ section:last-child {
     background-repeat: no-repeat;
     padding-top: 120px;
 }
+#artist-hero {
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 120px;
+}
+
+.download-icon {
+  margin-bottom: 10px;
+    width: 30px;
+    height: 30px;
+    filter: brightness(0) saturate(100%) invert(48%) sepia(79%) saturate(2479%) hue-rotate(235deg) brightness(101%) contrast(101%);
+}
 
 #home,
+#artist-hero,
 #games,
 #projects,
 #game-jams,
