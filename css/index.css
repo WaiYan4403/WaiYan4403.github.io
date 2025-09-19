@@ -434,6 +434,12 @@ h3{
     height: 60px;
 }
 
+.kanote-img2 {
+    margin-top: -40px;
+    height: 60px;
+}
+
+
 /* Hide kanote by default for non-active nav items */
 .nav-link:not(.active) .kanote {
     display: none;
