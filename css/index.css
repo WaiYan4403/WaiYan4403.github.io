@@ -94,6 +94,7 @@ section:last-child {
     padding-top: 120px;
 }
 #artist-hero {
+  background-image: url("../images/homebg.png");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -1033,6 +1034,14 @@ a:hover:not(.nav-link):not(.dropdown-item) {
     color: var(--purple) !important;
     text-decoration: underline !important;
     text-decoration-color: var(--purple) !important;
+}
+
+.gameAwards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
 }
 
 .image-grid-item a:hover h3 {
